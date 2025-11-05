@@ -19,27 +19,27 @@ These aren't trendy frameworks that will become obsolete next year. These are ti
 ## Table of Contents
 
 **Part 1: Core Skills**
-CH 01: Programmer to Engineer - Making the transition from coding to enginee ring thinking
-CH 02: Reading Code - Strategies for understanding existing codebases
-CH 03: Writing Code - Best practices for creating maintainable, quality code
+- CH 01: Programmer to Engineer - Making the transition from coding to enginee ring thinking
+- CH 02: Reading Code - Strategies for understanding existing codebases
+- CH 03: Writing Code - Best practices for creating maintainable, quality code
 
 **Part 2: Technical Practices**
-CH 04: Software Modeling - Using diagrams and models to design software systems
-[CH 05: Automated Testing](./CH_05/README.md) - Building confidence through different testing approaches
-CH 06: Working with Existing Code - Safely navigating and changing unknown code
+- CH 04: Software Modeling - Using diagrams and models to design software systems
+- [CH 05: Automated Testing](./CH_05/README.md) - Building confidence through different testing approaches
+- CH 06: Working with Existing Code - Safely navigating and changing unknown code
 
 **Part 3: Application Development and Design**
-CH 07: User Interface Design - Creating usable and accessible interfaces
-CH 08: Working with Data - Managing data types, storage, and performance
-CH 09: Software Architecture - Understanding trade-offs and architectural decisions
-CH 10: To Production - Deploying and maintaining code in real environments
+- CH 07: User Interface Design - Creating usable and accessible interfaces
+- CH 08: Working with Data - Managing data types, storage, and performance
+- CH 09: Software Architecture - Understanding trade-offs and architectural decisions
+- CH 10: To Production - Deploying and maintaining code in real environments
 
 **Part 4: Professional Development and Growth**
-CH 11: Powering Up Your Productivity - Optimizing your development workflow
-CH 12: Learning to Learn - Effective strategies for continuous skill development
-CH 13: Mastering Soft Skills in the Tech World - Communication and collaboration
-CH 14: Career Management - Planning and navigating your professional path
-CH 15: The AI-Powered Software Engineer - Working effectively with AI tools
+- CH 11: Powering Up Your Productivity - Optimizing your development workflow
+- CH 12: Learning to Learn - Effective strategies for continuous skill development
+- CH 13: Mastering Soft Skills in the Tech World - Communication and collaboration
+- CH 14: Career Management - Planning and navigating your professional path
+- CH 15: The AI-Powered Software Engineer - Working effectively with AI tools
 
 ## Running the Code Examples
 
