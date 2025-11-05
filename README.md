@@ -30,7 +30,7 @@ These aren't trendy frameworks that will become obsolete next year. These are ti
 
 **Part 3: Application Development and Design**
 - CH 07: User Interface Design - Creating usable and accessible interfaces
-- CH 08: Working with Data - Managing data types, storage, and performance
+- [CH 08: Working with Data](./CH_08/README.md) - Managing data types, storage, and performance
 - CH 09: Software Architecture - Understanding trade-offs and architectural decisions
 - CH 10: To Production - Deploying and maintaining code in real environments
 
