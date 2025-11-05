@@ -12,5 +12,8 @@ target/
 *.iml
 *.ipr
 
+### Robots ###
+.claude/
+
 ### Mac OS ###
 .DS_Store
