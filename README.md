@@ -26,7 +26,7 @@ These aren't trendy frameworks that will become obsolete next year. These are ti
 **Part 2: Technical Practices**
 - CH 04: Software Modeling - Using diagrams and models to design software systems
 - [CH 05: Automated Testing](./CH_05/README.md) - Building confidence through different testing approaches
-- CH 06: Working with Existing Code - Safely navigating and changing unknown code
+- [CH 06: Working with Existing Code](./CH_06/README.md) - Safely navigating and changing unknown code
 
 **Part 3: Application Development and Design**
 - CH 07: User Interface Design - Creating usable and accessible interfaces
