@@ -38,7 +38,7 @@ These aren't trendy frameworks that will become obsolete next year. These are ti
 - CH 11: Powering Up Your Productivity - Optimizing your development workflow
 - CH 12: Learning to Learn - Effective strategies for continuous skill development
 - CH 13: Mastering Soft Skills in the Tech World - Communication and collaboration
-- CH 14: Career Management - Planning and navigating your professional path
+- [CH 14: Career Management](./CH_14/README.md) - Planning and navigating your professional path
 - CH 15: The AI-Powered Software Engineer - Working effectively with AI tools
 
 ## Running the Code Examples
