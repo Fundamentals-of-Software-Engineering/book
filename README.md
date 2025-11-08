@@ -32,7 +32,7 @@ These aren't trendy frameworks that will become obsolete next year. These are ti
 - CH 07: User Interface Design - Creating usable and accessible interfaces
 - [CH 08: Working with Data](./CH_08/README.md) - Managing data types, storage, and performance
 - CH 09: Software Architecture - Understanding trade-offs and architectural decisions
-- CH 10: To Production - Deploying and maintaining code in real environments
+- [CH 10: To Production](./CH_10/README.md) - Deploying and maintaining code in real environments
 
 **Part 4: Professional Development and Growth**
 - CH 11: Powering Up Your Productivity - Optimizing your development workflow

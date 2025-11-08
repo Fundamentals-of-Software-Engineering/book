@@ -1,0 +1,46 @@
+# Production Environment Configuration
+
+logging:
+  level:
+    root: WARN
+    dev.fose: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+# External services (using environment variables for security)
+services:
+  payment-api:
+    url: ${PAYMENT_API_URL}
+    api-key: ${PAYMENT_API_KEY}
+    timeout: 10000
+
+  email-service:
+    url: ${EMAIL_SERVICE_URL}
+    enabled: true
+
+# Database configuration (from environment variables)
+database:
+  url: ${DATABASE_URL}
+  username: ${DATABASE_USERNAME}
+  password: ${DATABASE_PASSWORD}
+
+# Feature flags for production
+features:
+  advanced-search: false
+  email-notifications: true
+  debug-mode: false
+
+# Actuator endpoints (minimal exposure in production)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics
+  endpoint:
+    health:
+      show-details: when-authorized
+
+# Security settings
+server:
+  ssl:
+    enabled: ${SSL_ENABLED:true}

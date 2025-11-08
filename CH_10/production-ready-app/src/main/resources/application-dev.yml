@@ -1,0 +1,41 @@
+# Development Environment Configuration
+
+logging:
+  level:
+    root: INFO
+    dev.fose: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+# External services (pointing to local/test endpoints)
+services:
+  payment-api:
+    url: http://localhost:9000/api
+    api-key: ${PAYMENT_API_KEY:dev-test-key-12345}
+    timeout: 5000
+
+  email-service:
+    url: http://localhost:9001/api
+    enabled: true
+
+# Database configuration (would typically use H2 or local DB)
+database:
+  url: jdbc:h2:mem:devdb
+  username: sa
+  password:
+
+# Feature flags for development
+features:
+  advanced-search: true
+  email-notifications: true
+  debug-mode: true
+
+# Actuator endpoints (expose more in dev for debugging)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,env
+  endpoint:
+    health:
+      show-details: always

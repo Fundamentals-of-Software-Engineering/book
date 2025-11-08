@@ -1,0 +1,55 @@
+name: Java CI/CD Pipeline
+
+# This workflow demonstrates the CI/CD pipeline from Chapter 10
+# It runs automatically on push to main and on pull requests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up a Java development environment
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      # Step 3: Build the application
+      - name: Build with Maven
+        run: mvn -B clean compile --file pom.xml
+
+      # Step 4: Run automated tests
+      - name: Run tests
+        run: mvn test
+
+      # Step 5: Package the application (creates a JAR file)
+      - name: Package application
+        run: mvn package -DskipTests
+
+      # Step 6: Store the package as an artifact for deployment
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: calculator-jar
+          path: target/*.jar
+          retention-days: 5
+
+      # Step 7: Display build summary
+      - name: Build summary
+        if: success()
+        run: |
+          echo "✅ Build successful!"
+          echo "📦 Artifact created: calculator-jar"
+          echo "🚀 Ready for deployment"

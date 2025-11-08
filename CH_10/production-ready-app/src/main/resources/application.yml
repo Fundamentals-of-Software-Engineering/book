@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: production-ready-app
+  profiles:
+    active: dev
+
+# Default settings (can be overridden by profile-specific configs)
+server:
+  port: 8080
+
+# Feature flags
+features:
+  advanced-search: false
+  email-notifications: false
